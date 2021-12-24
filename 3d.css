@@ -1,0 +1,26 @@
+body{
+    perspective: 1000px;
+}
+div{
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background:rgb(139, 139, 214);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 150px;
+    text-align: center;
+    margin: 20px auto;
+    transition-duration: 1000ms;
+    transition-property: transform, margin-top;
+    transition-timing-function: ease-in-out;
+}
+#prespective:hover{
+    margin-top: 100px;
+   transform: translateZ(300px);
+}
+#rotate:hover{
+    margin-top: 100px;
+    transform: rotateY(60deg);
+}

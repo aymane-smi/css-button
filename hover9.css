@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    overflow: hidden;
+    padding: 20px 40px;
+    position: relative;
+    border: 3px solid tomato;
+    background: none;
+    font-size: 22.5px;
+    text-transform: uppercase;
+    color: tomato;
+    font-weight: 500;
+    transition: all 1000ms;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: tomato;
+    height: 0%;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    transition: all 1000ms;
+    z-index: -1;
+}
+.btn:hover::before{
+    height: 190%;
+}
+.btn:hover{
+    color: white;
+}

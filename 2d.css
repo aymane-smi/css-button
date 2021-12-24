@@ -1,0 +1,28 @@
+/* body{
+    
+} */
+div{
+    width: 150px;
+    height: 80px;
+    background: rgb(155, 155, 231);
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    margin: 60px auto;
+    transition-duration: 1000ms;
+    transition-property: scale(), skew(), transform-origin, translate();
+    transition-timing-function: ease-in-out;
+    transform-origin: center;
+}
+#scale:hover{
+    transform: scale(2);
+}
+#skew:hover{
+    transform: skew(-20deg);
+}
+#translate:hover{
+    transform: translate(160px, 30px);
+}
+#transform:hover{
+    transform: rotate(45deg);
+}
